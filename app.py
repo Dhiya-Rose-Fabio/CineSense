@@ -83,7 +83,7 @@ h1 {
 # Load trained model
 @st.cache_resource
 def load_model():
-    path = "movie_sentiment_model"
+    path = "dhiyarosefabio/cinesense-distilbert"
     tokenizer = AutoTokenizer.from_pretrained(path)
     model = AutoModelForSequenceClassification.from_pretrained(path)
     model.eval()
